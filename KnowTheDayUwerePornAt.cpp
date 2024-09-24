@@ -2,29 +2,41 @@
 using namespace std;
 
 short readYear() {
+bool wrongInput = 0;
 short y;
   do {
-    cout << "Year: ";
+    if(wrongInput) cout << "Wrong Input Year, try again\n";
+    cout << "Entre your birth Year: ";
     cin >> y;
+    cout << endl;
+    wrongInput = 1;
   } while (!y > 0);
   return y; 
 } 
 
 short readMonth() {
+bool wrongInput = 0;
 short m;
   do {
-    cout << "month: ";
+    if(wrongInput) cout << "Wrong Input Month, try again\n";
+    cout << "Entre your birth Month: ";
     cin >> m;
+    cout << endl;
+    wrongInput = 1;
   } while (m < 1 || m > 12);
   return m; 
 }
 
 short readDay() {
+bool wrongInput = 0;
 short d;
   do {
-    cout << "Day: ";
+    if(wrongInput) cout << "Wrong Input Day, try again\n";
+    cout << "Entre your birth Day: ";
     cin >> d;
-  } while (d < 1 || d > 30);
+    cout << endl;
+    wrongInput = 1;
+  } while (d < 1 || d > 31);
   return d; 
 }
 
@@ -37,7 +49,6 @@ int a, m, y;
 }
 
 string getDayUwerePornAt(short year, short month, short day) {
-
 string days[] {"Sunday", "Monday", "Tusday", "Wednesday", "Thurthday", "Friday", "Saturday"};
   return days[caclulate_ordre(year, month, day)];
 }
