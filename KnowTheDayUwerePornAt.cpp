@@ -10,7 +10,7 @@ short y;
     cin >> y;
     cout << endl;
     wrongInput = 1;
-  } while (!y > 0);
+  } while (y <= 0);
   return y; 
 } 
 
