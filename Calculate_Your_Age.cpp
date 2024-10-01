@@ -155,17 +155,18 @@ void printResult(stResult result) {
   cout << endl;
   cout << "\t  --- Your Age ---\n";
   cout << " ----------------------------------\n";
-  cout << "|    You Have | " << left << setw(10) << result.years << " | Years |\n";
-  cout << "| OR You Have | " << left << setw(10) << result.days << " | Days  |\n";
-  cout << "| OR You Have | " << left << setw(10) << result.hours << " | Hours |\n";
-  cout << "| OR You Have | " << left << setw(10) << result.mins << " | Mins  |\n";
-  cout << "| OR You Have | " << left << setw(10) << result.mins << " | Mins  |\n";
+  cout << "| You Have | " << left << setw(10) << result.years << "    | Years |\n";
+  cout << "| OR       | " << left << setw(10) << result.days << "\t   | Days  |\n";
+  cout << "| OR       | " << left << setw(10) << result.hours << "\t   | Hours |\n";
+  cout << "| OR       | " << left << setw(10) << result.mins << "\t   | Mins  |\n";
+  cout << "| OR       | " << left << setw(10) << result.secs << "\t   | Secs  |\n";
   cout << " ----------------------------------\n";
   cout << "| You Were Porn At " << left << setw(9) << result.dayUwerePornAt << " :)\t   |\n";
   cout << " ----------------------------------\n";
 }
 
 int main() {
+  system("cls");
 stDate currentDate, dateOfBirth;
   dateOfBirth = readDateOfBirth();
   getSystemDate(currentDate);
