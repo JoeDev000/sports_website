@@ -1,0 +1,247 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees */
+  }
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/680/298/small/seamless-geometric-pattern-with-stripes-modern-background-with-repeating-lines-dark-pattern-luxury-monochrome-backdrop-texture-for-wrapping-paper-branding-business-corporate-style-free-vector.jpg)
+
+}
+.title-container {
+  position: relative;
+  display: inline-block;
+}
+.title-container .Cover{
+  width: 255px;
+  animation: spin 5s;
+  display: block;
+  height: auto;
+}
+.title-container .title {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  position: absolute;
+  left: 35px;
+  top: 100px; 
+}
+.basketball-ball {
+  width: 200px;
+  position: absolute;
+  left: 250px;
+  top: 20px;
+  animation: spin 5s infinite linear;
+}
+.top-images .img {
+  width: 230.4px;
+  height: 126px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.top-images {
+  display: flex; 
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50px
+}
+.top-images .item .text {
+  position: static;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  width: 230.4px;
+  height: 126px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  transition: opacity 0.15s;
+  position: absolute;
+}
+.top-images .item .text:hover {
+  opacity: 0.5;
+}
+.pointer {
+  position: absolute;  
+  top: 40px;   
+  width: 250px;
+  height: auto;
+  animation: mymove 1s;
+  animation-iteration-count:infinite;
+}
+@keyframes mymove {
+  0% { right: 980px; }
+  50% { right: 1070px; }
+  100% { right: 980px; }
+}
+.sub-players .s2 {
+  font-weight: bold;
+  color: black;
+  width: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  font-size: 23px;
+  position: absolute;  
+  left: 462px;  
+  top: 80px;   
+  height: auto;
+}
+.sub-players .cover-1 {
+  width: 210px;
+  position: absolute;  
+  left: 425px;  
+  top: 5px;   
+  height: auto;
+  animation: spin 5s linear;
+  animation-iteration-count: infinite;
+}
+.p1 {
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  border: white solid 1px;
+  border-radius: 30px;
+  padding: 20px;
+  width: 500px;
+  top: 200px;
+  left: 30px;
+  position: absolute;
+  transition: color 1s, background-color 1s, border-color 1s;
+}
+.p1:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+.s1 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: monospace;
+  font-style: italic;
+}
+.sub-definetion {
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.sub-sub-definetion {
+  font-weight: bold;
+}
+.p2 {
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  border: white solid 1px;
+  border-radius: 30px;
+  padding: 20px;
+  left: 30px;
+  top: 656px;
+  width: 800px;
+  position: absolute;
+  transition: color 1s, background-color 1s, border-color 1s;
+}
+.p2:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+.p-related-images .img-1 {
+  width: 150px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: box-shadow 0.5s;
+}
+.p-related-images .img-1:hover {
+  box-shadow: 0px 0px 30px rgba(255, 255, 255);
+}
+.p-related-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+  width: 320px; /* Width to fit exactly 2 images (150px + gap) per row */
+  margin-left: 400px;
+  position: absolute;
+  left: 185px;
+  top: 220px;
+}
+.event {
+  background-color: white;
+  width: 200px;
+  height: fit-content;
+  padding: 20px;
+  padding-top: 0px;
+  border: black 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  transition: box-shadow 0.5s;
+}
+.event:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+.event .event-title {
+  font: 20px bold;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+.event .p3 {
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
+.event .see-event-details {
+  border: none;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: antiquewhite;
+  color: brown;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+}
+.event .see-event-details:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  background-color: brown;
+  color: antiquewhite;
+}
+.events-header {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  right: 360px;
+  top: 170px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: color 1s, background-color 1s, border-color 1s;
+}
+.events-header:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+.events-section {
+  position: absolute; /* Absolute positioning relative to the body */
+  top: 270px;
+  right: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 50px;
+}
